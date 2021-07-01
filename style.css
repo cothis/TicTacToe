@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: default;
 }
 
 .title {
@@ -43,16 +44,8 @@ body {
   margin: 8px;
 }
 
-.game__score .active::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  top: 8px;
-  left: -8px;
-  height: 6px;
-  width: 6px;
-  background-color: #ff8c00;
-  border-radius: 50%;
+.game__score .active {
+  border-bottom: 4px dotted greenyellow;
 }
 
 .game__board {
